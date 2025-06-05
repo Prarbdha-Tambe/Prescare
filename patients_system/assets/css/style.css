@@ -1,0 +1,54 @@
+/* ====== 1. Neumorphism & Glassmorphism Design ====== */
+.card {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 8px 8px 16px #c3d4cc, -8px -8px 16px #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ====== 2. Modern Font & Typography ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ====== 3. Better Buttons & Cards ====== */
+.btn-custom {
+    background: linear-gradient(135deg, #63FFB7, #50E0A0);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(99, 255, 183, 0.5);
+}
+
+/* ====== 4. Subtle Animations & Hover Effects ====== */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(20px);
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
